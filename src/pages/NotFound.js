@@ -11,8 +11,8 @@ const NotFound = () => {
           <meta name="description" content="Tahsin Sungur - Sungur.dev" />
         </Helmet>
     </HelmetProvider>
-        <div className="container prose py-4">
-            <h1 className="text-zinc-400">404 - Sayfa Bulunamadı</h1>
+        <div className="container content">
+            404 sayfası
         </div>
     </>
   )

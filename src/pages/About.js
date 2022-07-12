@@ -1,8 +1,6 @@
-import React from 'react'
 import { useEffect } from 'react'
-import profil from '../img/profil.jpg'
-import Skills from '../components/Skills'
 import {Helmet, HelmetProvider} from 'react-helmet-async'
+import profilPicture from '../img/about.jpg'
 
 const About = () => {
 
@@ -11,7 +9,7 @@ const About = () => {
   }, [])
 
   return (
-    <div>
+    <>
       <HelmetProvider>
         <Helmet>
           <meta charSet="utf-8" />
@@ -19,22 +17,70 @@ const About = () => {
           <meta name="description" content="Hakkımda | Sungur.dev" />
         </Helmet>
       </HelmetProvider>
-        <div className="container prose py-4">
-          <h1 className="font-semibold text-zinc-400 mb-2">Ben Tahsin Sungur.</h1>
-          <h1 className="text-zinc-300 text-2xl font-light">27 yaşında bir Front-end developer'ım.</h1>
-        </div>
-        <div className="max-w-5xl mx-auto my-4">
-           <img src={profil} alt="Tahsin Sungur"/>
-        </div>
-        <div className="container prose py-4">
-          <p className="text-zinc-500">İzmir'de yaşıyorum. Freelance olarak uzun zamandır grafik tasarım ve yazılım alanlarında çalışmalar yapıyorum. Hobi olarak mobil fotoğrafçılık, renklendirme, video çekimi ve kurgu işleriyle ilgiliyim.</p>
-          <p className="text-zinc-500">Kod yazmanın verdiği hazdan ve bunu tam zamanlı bir işe çevirmek isteğimden dolayı front-end alanında kendimi geliştirmeye daha fazla zaman ayırıyorum. Bu siteyi de yeni öğrenmeye başladığım <strong className="text-zinc-400 font-bold">React</strong> ile kodladım.</p>
-          <p className="text-zinc-500">Daha fazla proje üretme ve tamamen yazılım odaklı bir gelecek planım için burası ilk adım olmasa da benim adıma bir kilometre taşı.</p>
-          <p className="text-zinc-500"></p>
-        </div>
-        <Skills/>
-      
-    </div>
+
+      <div className="headlinePic">
+            <img src={profilPicture} alt="Tahsin Sungur"/>
+          </div>
+      <div className="AboutPage container content">
+      <h2 className="headline">Merhaba, ben Tahsin Sungur</h2>
+        <p>İzmir'de yaşıyorum. Freelance olarak uzun zamandır grafik tasarım ve yazılım alanlarında çalışmalar yapıyorum. Hobi olarak mobil fotoğrafçılık, renklendirme, video çekimi ve kurgu işleriyle ilgiliyim.</p>
+        <p>Kod yazmanın verdiği hazdan ve bunu tam zamanlı bir işe çevirmek isteğimden dolayı front-end alanında kendimi geliştirmeye daha fazla zaman ayırıyorum. Bu siteyi de yeni öğrenmeye başladığım React ile kodladım.</p>
+        <p>Daha fazla proje üretme ve tamamen yazılım odaklı bir gelecek planım için burası ilk adım olmasa da benim adıma bir kilometre taşı.</p>
+      </div>
+
+      <div class="AboutPage container content">
+        <h2 class="headline">Beceriler</h2>
+        
+        <div class="Beceriler">
+          <div class="beceriBlokTitle">
+            Tasarım & Video
+            </div>
+            <div class="beceriBlokTag">
+                <span class="beceriTag">
+                  Photoshop
+                </span>
+                <span class="beceriTag">
+                  Illustrator
+                </span>
+                <span class="beceriTag">
+                  Figma
+                </span>
+                <span class="beceriTag">
+                  Adobe XD
+                </span>
+                <span class="beceriTag">
+                  Premiere Pro
+                </span>
+                <span class="beceriTag">
+                  DaVinci Resolve
+                </span>
+              </div>
+              </div>
+              
+              <div class="Beceriler">
+                <div class="beceriBlokTitle">
+                  Yazılım
+                </div>
+                <div class="beceriBlokTag">
+                  <span class="beceriTag">
+                    HTML
+                  </span>
+                  <span class="beceriTag">
+                    CSS
+                  </span>
+                  <span class="beceriTag">
+                    Javascript
+                  </span>
+                  <span class="beceriTag">
+                    ReactJS
+                  </span>
+                  <span class="beceriTag">
+                    PHP
+                  </span>
+                </div>
+              </div>
+            </div>
+    </>
   )
 }
 

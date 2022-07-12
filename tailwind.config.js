@@ -11,11 +11,12 @@ module.exports = {
         zinc: colors.zinc
       },
       fontFamily:{
-        'sans':['Inter', 'sans-serif'],
+        'sans':['Catamaran', 'sans-serif'],
       }
     },
   },
   plugins: [
-    require('@tailwindcss/typography')
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/line-clamp'),
   ],
 }

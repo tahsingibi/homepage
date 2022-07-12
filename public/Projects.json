@@ -1,0 +1,58 @@
+[
+    {
+      "id": 8,
+      "name": "sungur.dev",
+      "github": "https://github.com/tahsingibi/homepage",
+      "live": "https://sungur.dev/",
+      "tech": "ReactJS, TailwindCSS"
+    },
+    {
+      "id": 7,
+      "name": "Hexwords TR",
+      "github": "https://github.com/tahsingibi/hexword-tr",
+      "live": "https://hexword-tr.vercel.app/",
+      "tech": "ReactJS, TailwindCSS"
+    },
+    {
+      "id": 6,
+      "name": "Todo App",
+      "github": "https://github.com/tahsingibi/todolist",
+      "live": "https://tahsinbey.com/cv/todo/",
+      "tech": "ReactJS"
+    },
+    {
+      "id": 5,
+      "name": "tahsinbey.com Kişisel Blog",
+      "github": "",
+      "live": "https://tahsinbey.com",
+      "tech": "TailwindCSS, Wordpress"
+    },
+    {
+      "id": 4,
+      "name": "BRN Mimarlık (Askıda)",
+      "github": "",
+      "live": "https://tahsinbey.com/cv/build",
+      "tech": "TailwindCSS"
+    },
+    {
+      "id": 3,
+      "name": "Landify Landing Page",
+      "github": "",
+      "live": "https://tahsinbey.com/cv/landify/",
+      "tech": "TailwindCSS"
+    },
+    {
+      "id": 2,
+      "name": "ÖZAY & ÖZAY Avukatlık Bürosu",
+      "github": "",
+      "live": "http://senihozay.av.tr",
+      "tech": "Bootstrap"
+    },
+    {
+      "id": 1,
+      "name": "Pena Weddings (Askıda)",
+      "github": "",
+      "live": "https://tahsinbey.com/cv/penaweddings",
+      "tech": "Bootstrap"
+    }
+  ]

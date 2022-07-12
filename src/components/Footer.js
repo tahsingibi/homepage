@@ -1,18 +1,27 @@
 import React from 'react'
-import {FaGithub} from 'react-icons/fa'
+import {FaRegEnvelope, FaTwitter, FaInstagram, FaGithub} from "react-icons/fa"
 
 function Footer() {
-
-
   return (
     <>
-    <div className="container mt-8 h-[1px] bg-zinc-800"></div>
-    <div class="container prose py-4">
-      <div className="text-zinc-500 flex items-center">
-        <a href="https://github.com/tahsingibi/homepage" target="_blank" className="text-zinc-400 mr-4 text-2xl hover:scale-110"><FaGithub/></a>
-        <strong className="text-zinc-400 mx-2">ReactJS</strong> ve <strong className="text-zinc-400 mx-2">TailwindCSS</strong> ile hazırlandı.
-      </div>
-    </div>
+    <div className="container"><hr/></div>
+    <footer className="footer container content">
+      <p className="footerLeft"><strong>ReactJS</strong> ve <strong>TailwindCSS</strong> ile hazırlandı.</p>
+      <p className="footerRight">
+        <a href="mailto:mtahsinsungur@gmail.com" target="_blank">
+          <FaRegEnvelope/>
+        </a>
+        <a href="https://twitter.com/tahsingibi" target="_blank">
+          <FaTwitter/>
+        </a>
+        <a href="https://instagram.com/tahsingibi" target="_blank">
+          <FaInstagram/>
+        </a>
+        <a href="https://github.com/tahsingibi" target="_blank">
+          <FaGithub/>
+        </a>
+      </p>
+    </footer>
     </>
   )
 }
