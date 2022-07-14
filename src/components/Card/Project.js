@@ -11,6 +11,7 @@ function Project() {
       fetch("../Projects.json")
       .then((res)=>res.json())
       .then((users)=>setIsler(users))
+      .catch((e)=>console.log(e))
     },[])
 
 

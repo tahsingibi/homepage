@@ -9,7 +9,7 @@ function Header() {
           <nav className="topNav">
             <NavLink to="/">Anasayfa</NavLink>
             <NavLink to="/about">Hakkımda</NavLink>
-            <NavLink to="/projeler">Projeler</NavLink>
+            <NavLink to="/portfolio">Projeler</NavLink>
         </nav>
       </div>
      </header>

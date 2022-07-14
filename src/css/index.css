@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 *{@apply box-border transition-all ease-linear;}
-strong{@apply text-zinc-400 text-opacity-80}
+strong{@apply text-zinc-400 text-opacity-80 font-semibold}
 body{
     @apply font-sans bg-zinc-900 text-zinc-500 antialiased;
 }
+::selection{@apply bg-black}
 
 @layer components{
     .container{@apply max-w-3xl w-full mx-auto px-4 antialiased transition-all;}
@@ -22,12 +23,12 @@ body{
 
 
 
-.sngCard{@apply flex flex-col items-center sm:flex-row space-x-0 space-y-6 sm:space-y-0 sm:space-x-6 my-12}
-.title{@apply w-full sm:w-8/12 text-zinc-200 sm:p-0}
-    .title h1{@apply text-4xl font-semibold}
+.sngCard{@apply flex flex-col items-center sm:flex-row space-x-0 space-y-6 sm:space-y-0 sm:space-x-6 mb-6 mt-0 sm:my-12}
+.title{@apply w-full sm:w-8/12  sm:p-0}
+    .title h1{@apply text-4xl font-semibold text-zinc-200}
     .title p{@apply text-lg }
-.exc{@apply opacity-80 mt-1}
-.about{@apply text-zinc-500 mt-4}
+.exc{@apply  mt-1 text-zinc-400}
+.about{@apply mt-4 }
 .pPic{@apply w-full sm:w-4/12}
     .pPic img{@apply rounded-xl object-cover object-top h-60 w-full sm:h-full}
 
@@ -36,12 +37,13 @@ h2.headline{@apply text-3xl font-semibold w-full text-zinc-300 my-2 flex}
 
 .Projects{@apply  w-full my-12}
     .ProjectList{@apply flex flex-row flex-wrap}
-    .ProjectListCover{@apply p-1 w-full sm:w-1/2}
+    .ProjectListCover{@apply px-0 py-1 sm:p-1 w-full sm:w-1/2}
     .ProjectList-item{@apply border border-zinc-800 rounded-xl p-4 flex justify-between items-center}
     .ProjectList-item .item-tech{@apply opacity-60}
-    .ProjectList h3{@apply font-bold line-clamp-1 text-zinc-400 hover:text-zinc-500}
+    .ProjectList h3{@apply text-lg font-bold line-clamp-1}
+    .ProjectList h3 a{@apply hover:text-zinc-300}
     .ProjectList .links{@apply flex text-4xl items-center space-x-1}
-    .ProjectList .links a{@apply hover:opacity-60 }
+    .ProjectList .links a:hover svg{@apply text-zinc-300 }
     .githubLink{@apply text-2xl}
 
 .footer{@apply flex flex-col my-6 items-center sm:flex-row justify-between}
@@ -51,13 +53,21 @@ h2.headline{@apply text-3xl font-semibold w-full text-zinc-300 my-2 flex}
 
 .AboutPage{@apply my-12}
 .headlinePic{@apply max-w-6xl w-full mx-auto my-12}
-  .headlinePic img{@apply w-full max-h-[600px] object-cover object-top rounded-xl}
+  .headlinePic img{@apply w-full max-h-[600px] object-cover object-top rounded-none sm:rounded-xl}
 .AboutPage.container{@apply text-lg space-y-6}
 .AboutPage p{@apply  font-light}
 .Beceriler{@apply flex flex-col md:flex-row mb-8}
 .beceriBlokTitle{@apply w-full md:w-1/3 mb-4 md:mb-0}
 .beceriBlokTag{@apply w-full md:w-2/3 flex flex-wrap gap-2}
 .beceriTag{@apply bg-zinc-800 text-zinc-500 px-4 py-2 text-base rounded-3xl}
+
+.blogPosts{list-style:decimal-leading-zero; @apply ml-8}
+.blogPosts li{@apply py-2 border-b border-zinc-800}
+.blogPosts li:nth-last-child(1){@apply border-none}
+.blogPosts li::marker{@apply font-extrabold text-zinc-700 text-xl}
+.blogPosts a{@apply hover:text-zinc-300}
+
+.allPost{@apply inline-flex items-center mt-4 font-bold rounded-lg;}
 
 @layer base{
     /* tamil */

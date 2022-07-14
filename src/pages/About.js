@@ -24,57 +24,57 @@ const About = () => {
       <div className="AboutPage container content">
       <h2 className="headline">Merhaba, ben Tahsin Sungur</h2>
         <p>İzmir'de yaşıyorum. Freelance olarak uzun zamandır grafik tasarım ve yazılım alanlarında çalışmalar yapıyorum. Hobi olarak mobil fotoğrafçılık, renklendirme, video çekimi ve kurgu işleriyle ilgiliyim.</p>
-        <p>Kod yazmanın verdiği hazdan ve bunu tam zamanlı bir işe çevirmek isteğimden dolayı front-end alanında kendimi geliştirmeye daha fazla zaman ayırıyorum. Bu siteyi de yeni öğrenmeye başladığım React ile kodladım.</p>
+        <p>Kod yazmanın verdiği hazdan ve bunu tam zamanlı bir işe çevirmek isteğimden dolayı front-end alanında kendimi geliştirmeye daha fazla zaman ayırıyorum. Bu siteyi de yeni öğrenmeye başladığım <strong>React</strong> ile kodladım.</p>
         <p>Daha fazla proje üretme ve tamamen yazılım odaklı bir gelecek planım için burası ilk adım olmasa da benim adıma bir kilometre taşı.</p>
       </div>
 
-      <div class="AboutPage container content">
-        <h2 class="headline">Beceriler</h2>
+      <div className="AboutPage container content">
+        <h2 className="headline">Beceriler</h2>
         
-        <div class="Beceriler">
-          <div class="beceriBlokTitle">
+        <div className="Beceriler">
+          <div className="beceriBlokTitle">
             Tasarım & Video
             </div>
-            <div class="beceriBlokTag">
-                <span class="beceriTag">
+            <div className="beceriBlokTag">
+                <span className="beceriTag">
                   Photoshop
                 </span>
-                <span class="beceriTag">
+                <span className="beceriTag">
                   Illustrator
                 </span>
-                <span class="beceriTag">
+                <span className="beceriTag">
                   Figma
                 </span>
-                <span class="beceriTag">
+                <span className="beceriTag">
                   Adobe XD
                 </span>
-                <span class="beceriTag">
+                <span className="beceriTag">
                   Premiere Pro
                 </span>
-                <span class="beceriTag">
+                <span className="beceriTag">
                   DaVinci Resolve
                 </span>
               </div>
               </div>
               
-              <div class="Beceriler">
-                <div class="beceriBlokTitle">
+              <div className="Beceriler">
+                <div className="beceriBlokTitle">
                   Yazılım
                 </div>
-                <div class="beceriBlokTag">
-                  <span class="beceriTag">
+                <div className="beceriBlokTag">
+                  <span className="beceriTag">
                     HTML
                   </span>
-                  <span class="beceriTag">
+                  <span className="beceriTag">
                     CSS
                   </span>
-                  <span class="beceriTag">
+                  <span className="beceriTag">
                     Javascript
                   </span>
-                  <span class="beceriTag">
+                  <span className="beceriTag">
                     ReactJS
                   </span>
-                  <span class="beceriTag">
+                  <span className="beceriTag">
                     PHP
                   </span>
                 </div>
